@@ -8,7 +8,7 @@
 
 import Foundation
 
-// setup adventurer class
+// setup adventurer class, you may add additional properties or methods to the super, you may rename anything in here
 class Adventurer {
     
     var name : String
@@ -30,19 +30,13 @@ class Adventurer {
         print("Hit Chance: \(self.hitRate)")
     }
     
-    func attack(_ type: Int) -> Bool { //returns true if hits
+    func attack() -> Bool { //returns true if hits
         
         var hitRoll : Int = 0
-       
         hitRoll = getRando(99) + 1
         
-        if Double(hitRoll) < self.hitRate * 100 {
-            print("You hit!")
-            return true
-        } else {
-            print("You missed!")
-            return false
-        }
+        return false
+    
     }
     
     func WasHit(damage: Int) -> Bool { //return true if dead
@@ -54,7 +48,7 @@ class Adventurer {
 }// end adventurer
 
 
-// define adenturer subclasses
+// define adventurer subclasses, create at least 1 override method for each subclass
 class Warrior : Adventurer {
     
     override init() {
@@ -62,6 +56,8 @@ class Warrior : Adventurer {
         self.damage = 10
         self.hitRate = 0.30
     }
+    
+    
 
 }
 

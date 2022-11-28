@@ -28,3 +28,5 @@ heroes.append(blippo)
 blippo.status()
 bluto.status()
 blammo.status()
+
+

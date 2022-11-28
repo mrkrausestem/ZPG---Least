@@ -10,7 +10,6 @@ import Foundation
 
 func getRando(_ upperLimit : Int) -> Int {
     return Int.random(in: 0...upperLimit)
-    //Int(arc4random_uniform(upperLimit))
 }
 
 
