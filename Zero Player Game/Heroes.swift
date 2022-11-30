@@ -56,9 +56,6 @@ class Warrior : Adventurer {
         self.damage = 10
         self.hitRate = 0.30
     }
-    
-    
-
 }
 
 class Mage : Adventurer {
@@ -77,6 +74,5 @@ class Rogue : Adventurer {
         self.damage = 5
         self.hitRate = 0.60
     }
-    
 }
 

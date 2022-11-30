@@ -29,4 +29,6 @@ blippo.status()
 bluto.status()
 blammo.status()
 
-
+//randomly selecting a hero to use
+var myHero = heroes[getRando(2)]
+print("\(myHero.name) was selected!")
